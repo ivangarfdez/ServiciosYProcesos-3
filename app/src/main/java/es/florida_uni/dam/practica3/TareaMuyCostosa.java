@@ -47,12 +47,16 @@ public class TareaMuyCostosa implements Runnable {
     // TODO: Mostrar el progreso en la barra principal
     // Debéis hacerlo utilizando runOnUIThread o enviando un runnable
     private void mostrarProgreso(final int progreso) {
+<<<<<<< HEAD
         actividadPadre.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 actividadPadre.getBarraProgreso().setProgress(progreso);
             }
         });
+=======
+        this.actividadPadre.getBarraProgreso().setProgress(progreso);
+>>>>>>> origin/master
 
 
     }
